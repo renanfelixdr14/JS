@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .esconder{
+            display: none !important;
+        }
+        .exibir{
+            display: block !important;
+        }
+        .sucess{
+            color: green;
+            background-color: rgb(213, 222, 213);
+        }
+        .danger{
+            color: red;
+            background-color: rgb(213, 222, 213);
+        }
+        .msg-geral {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg-geral esconder"></div>
+    <input type="text" id="nome" placeholder="Nome"><br><br>
+    <select id="select">
+        <option value="selecione" class="pessoa">Selecione</option>
+        <option value="fisico" class="fisico">Fisico</option>
+        <option value="juridico" class="juridico">Juridico</option>
+    </select><br><br>
+    <button type="button" id="selectOP">Próximo</button><br><br>
+    <div class="fisicod esconder">
+        <input type="text" id="cpf" placeholder="CPF"><br><br>
+        <input type="text" id="rg" placeholder="RG"><br><br>
+        <input type="text" id="idade" placeholder="Idade"><br><br>
+    </div>
+    <div class="juridicod esconder">
+        <input type="text" id="cnpj" placeholder="CNPJ"><br><br>
+        <input type="text" id="IE" placeholder="IE"><br><br>
+        <input type="text" id="nomef" placeholder="Nome Fantasia"><br><br>
+    </div>
+    <button type="button" id="btnValidar">Validar</button>
+</body>
+<script src="app.js"></script>
+</html>

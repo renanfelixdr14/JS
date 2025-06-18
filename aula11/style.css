@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(52, 52, 52);
+    color:darkgoldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+}
+h1{
+    text-align: center;
+}
+button{
+    margin: 0 20px;
+}
+.mostrar{
+    display: block;
+}
+.esconder{
+    display: none;
+}

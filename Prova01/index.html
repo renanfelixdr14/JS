@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .esconder{
+            display: none !important;
+        }
+        .exibir{
+            display: block !important;
+        }
+        .sucesso{
+            color: green;
+            background-color: rgb(213, 222, 213);
+        }
+        .erro{
+            color: red;
+            background-color: rgb(213, 222, 213);
+        }
+        .mensagem {
+            color: red;
+            background-color:  rgb(242, 216, 216);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensagem esconder"></div>
+    <div class="mensagem esconder"></div>
+    <div class="mensagem esconder"></div>
+    <div class="mensagem esconder"></div>
+    <div class="mensagem esconder"></div>
+    <div class="mensagem esconder"></div>
+    <div class="mensagem esconder"></div>
+    <select id="select">
+        <option value="selecione">Selecione</option>
+        <option value="produto">Produto</option>
+        <option value="servico">Serviço</option>
+    </select>
+    <button type="button" id="botaoA">Abrir</button><br><br>
+    <div class="produtoD esconder">
+        <input type="text" id="dsP" placeholder="Descrição do Produto"><br><br>
+        <input type="text" id="categoria" placeholder="Categoria"><br><br>
+        <input type="number" id="ValorV" placeholder="Valor à vista"><br><br>
+        <input type="number" id="ValorP" placeholder="Valor à prazo"><br><br>
+        <button type="button" id="botaoValidar1">Cadastrar</button>
+    </div>
+    <div class="servicoD esconder">
+        <input type="text" id="dsS" placeholder="Descrição do Serviço"><br><br>
+        <input type="number" id="ValorPC" placeholder="Valor das Peças"><br><br>
+        <input type="number" id="ValorMO" placeholder="Valor da Mão de Obra"><br><br>
+        <button type="button" id="botaoValidar2">Cadastrar</button>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>

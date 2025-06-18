@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msgGeral {
+            color: red;
+            font-family: 'segoe Ui', sans-serif;
+            font-size: 10px;
+            background-color: rgb(242, 216, 216);
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .esconder {
+            display: none !important;
+        }
+        .exibir {
+            display: 'block' !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="msgGeral esconder"></div>
+    <div class="msgGeral esconder"></div>
+    <div class="msgGeral esconder"></div>
+    <div class="msgGeral esconder"></div>
+    <p>Nome</p>
+    <input type="text" id="nome"><br>
+    <p class="msgNome">* Informe o nome</p>
+    <input type="number" id="idade"><br>
+    <p class="msgNome">* Informe idade</p>
+    <input type="number" id="cpf"><br>
+    <p class="msgNome">* Informe CPF</p>
+    
+    <button type="button" id="btnValidar">Validar</button>
+    
+</body>
+<script src="app.js"></script>
+</html>
